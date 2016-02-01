@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Teddy ABBOU - CV</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="cv.css" />
+</head>
+<body>
+<!-- MENU -->
+<div id="nav">
+    <div id="titre">
+        <h1>Teddy ABBOU</h1>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><img src="carre.svg" class="carre"/>CV<img src="carre.svg" class="carre"/></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
+    <div id="icone">
+
+        <a href="mailto:abbou.teddy@free.fr" target="_blank" ><img src="mail.svg" class="ico"></a>
+        <a href="https://twitter.com/Teddy_Abbou" target="_blank" ><img src="twitter.svg" class="ico"></a>
+        <a href="https://github.com/simplon-tedfodya" target="_blank" ><img src="git.svg" class="ico"></a>
+
+    </div>
+    <div id="copy"><p>
+        ©Copyright 2016 by<br>
+        Teddy ABBOU</p>
+    </div>
+</div>
+
+<div id="containerT">
+    <div id="principale">
+        <div id="entete">
+            <img src="cv.png" id="photo">
+            <h2>Teddy ABBOU <br> Développeur Junior</h2>
+        </div>
+        <hr width="50%" color="black">
+        <div id="soustitre">
+            <h3>Lyon</h3>
+            <h3>Célibataire</h3>
+            <h3>20 ans</h3>
+        </div>
+        <div class="bouton">
+            <div class="mbouton" onclick="xp()">
+                <img src="demicarreh.svg" class="triangle">
+                Expérience Professionnel
+                <img src="demicarreb.svg" class="triangle">
+            </div>
+            <div class="mbouton" onclick="competence()">
+                <img src="demicarreh.svg" class="triangle">
+                Compétence
+                <img src="demicarreb.svg" class="triangle">
+            </div>
+            <div class="mbouton" onclick="formation()">
+                <img src="demicarreh.svg" class="triangle">
+                Formation
+                <img src="demicarreb.svg" class="triangle">
+            </div>
+        </div>
+    </div>
+    <script>
+        function xp(){
+            document.getElementById("principale").style.display="none";
+            document.getElementById("xp").style.display="flex";
+            document.getElementById("competence").style.display="none";
+            document.getElementById("formation").style.display="none";
+        }
+        function competence(){
+            document.getElementById("principale").style.display="none";
+            document.getElementById("xp").style.display="none";
+            document.getElementById("competence").style.display="flex";
+            document.getElementById("formation").style.display="none";
+        }
+
+        function formation(){
+            document.getElementById("principale").style.display="none";
+            document.getElementById("xp").style.display="none";
+            document.getElementById("competence").style.display="none";
+            document.getElementById("formation").style.display="flex";
+        }
+    </script>
+    <div id="xp">
+
+        <div class="bouton">
+            <div class="mbouton" onclick="xp()">
+                <img src="demicarreh.svg" class="triangle">
+                Expérience Professionnel
+                <img src="demicarreb.svg" class="triangle">
+            </div>
+            <div class="mbouton" onclick="competence()">
+                <img src="demicarreh.svg" class="triangle">
+                Compétence
+                <img src="demicarreb.svg" class="triangle">
+            </div>
+            <div class="mbouton" onclick="formation()">
+                <img src="demicarreh.svg" class="triangle">
+                Formation
+                <img src="demicarreb.svg" class="triangle">
+            </div>
+        </div>
+        <br>
+        <div class="contenu">
+            <div class="stitre">
+                <h7> 2014 - 2015</h7><h4> ></h4><h4> Techninicen de maintenance</h4><h4> ></h4><h6> EVOLUTECH.COM</h6>
+            </div>
+            <br>
+            <div class="texte">
+                <h5> > SAV dépannage télévision et éléctroménager</h5>
+                <h5> > Intervention à domicile en clientèle.</h5>
+                <h5> > Test afin de détecter la panne sur les l’appareil défectueux.</h5>
+            </div>
+            <br>
+            <br>
+            <div class="stitre">
+                <h7> 2013 - 2014</h7><h4> Techninicen de maintenance</h4><h4> ></h4><h6>REFETUDES MARKETING </h6>
+            </div>
+            <br>
+            <div class="texte">
+                <h5> > Initialisation au langage HTML, PHP …</h5>
+                <h5> > Préparation cahier des charges du client.  </h5>
+            </div>
+            <br>
+            <br>
+            <div class="stitre">
+                <h7> 2013 - 2014</h7><h4> Techninicen de maintenance</h4><h4> ></h4><h6> OPSI INFORMATQUE </h6>
+            </div>
+            <br>
+            <div class="texte">
+                <h5>> Réception de la clientèle (SAV).</h5>
+                <h5>> Diagnostique et résolution des problèmes informatiques.</h5>
+                <h5>> Installation d’un serveur Windows 2008 RAID 5.</h5>
+                <h5>> Installation et configuration d’un NAS </h5>
+            </div>
+            <br>
+            <br>
+            <div class="stitre">
+                <h7> 2012 - 2013</h7><h4> ></h4><h4> Techninicen de maintenance</h4><h4> ></h4><h6>YAD INFORMATIQUE </h6>
+            </div>
+            <br>
+            <div class="texte">
+                <h5> > Installation parc informatique (Windows 7).</h5>
+                <h5> > Montage d’ordinateur avec systèmes d’exploitation (Windows XP, Seven, …)</h5>
+                <h5> > Prise en main d’ordinateurs à distance (TeamViewer</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

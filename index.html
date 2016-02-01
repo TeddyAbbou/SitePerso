@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1">
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+<!-- MENU -->
+<div id="nav">
+    <div id="top">
+        <a href="index.html"> <h1>Teddy ABBOU <br><h2>Etudiant</h2></h1></a>
+
+        <div id="iconeg">
+            <a href="https://fr.linkedin.com/in/teddy-abbou-1086b691" target="_blank" ><img src="linkedin.svg" class="ico"></a>
+            <a href="https://twitter.com/Teddy_Abbou" target="_blank" ><img src="twitter.svg" class="ico"></a>
+            <a href="https://github.com/TeddyAbbou" target="_blank" ><img src="git.svg" class="ico"></a>
+        </div>
+
+        <div id="pmenuopen" onclick="menuopen()" >
+            <h6>MENU</h6>
+            <img src="menu.svg" id="hamburger">
+        </div>
+
+        <div id="pmenuclose" onclick="menuclose()">
+            <h6>FERMER</h6>
+            <img src="croix.svg" id="croix">
+        </div>
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><img src="carre.svg" class="carre"/>Accueil<img src="carre.svg" class="carre"/></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.php"> Contact</a></li>
+        </ul>
+    </div>
+    <div id="copyg"><p>
+        © Tout droit réservé by<br>
+        Teddy ABBOU</p>
+    </div>
+</div>
+<div id="menuclose">
+    <ul>
+        <li><img src="carre.svg" class="carre"/>Accueil<img src="carre.svg" class="carre"/></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.php"> Contact</a></li>
+    </ul>
+</div>
+<!-- Corps -->
+<div id="container">
+
+    <div id="texte">
+        <div id="ecriture">
+            <h3>Je m’appelle Teddy, j’ai 20 ans.<br>
+                <br>
+                Diplomé du BAC PRO Système Electronique  & Numérique, j’ai suivi une formation Web développeur à Simplon Lyon. <br>
+                Actuellement, je suis à la recherche d'un contrat en alternance
+                dans une entreprise de développement web,
+                afin de valider ma licence. <br>
+                <br>
+
+                </h3>
+        </div>
+
+        <div id="dl">
+            <img src="demicarreh.svg" class="triangle">
+            <div id="texte2"><img src="carre.svg" class="carre"/>
+                <a href="CV - Teddy ABBOU.pdf" target="_blank"> Accéder à mon CV</a><img src="carre.svg" class="carre"/></div>
+            <img src="demicarreb.svg" class="triangle">
+        </div>
+    </div>
+
+    <img src="homme.svg" id="homme">
+    <div id="bck"></div>
+    <div class="bas">
+        <div id="copyp"><p>
+            © Tout droit réservé 2016 by<br>
+            Teddy ABBOU</p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function  menuopen(){
+        console.log("airbnb");
+        document.getElementById("pmenuopen").style.display="none";
+        document.getElementById("container").style.display="none";
+        document.getElementById("menuclose").style.display="flex";
+        document.getElementById("pmenuclose").style.display="flex";
+    }
+    function menuclose (){
+        document.getElementById("menuclose").style.display="none";
+        document.getElementById("pmenuopen").style.display="flex";
+        document.getElementById("pmenuclose").style.display="none";
+        document.getElementById("container").style.display="flex";
+    }
+</script>
+</body>
+</html>

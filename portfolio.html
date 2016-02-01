@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+    <title>Teddy ABBOU - Porfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body>
+<!-- MENU -->
+<div id="nav">
+    <div id="top">
+        <a href="index.html"> <h1>Teddy ABBOU <br><h2>Etudiant</h2></h1></a>
+
+        <div id="iconeg">
+            <a href="https://fr.linkedin.com/in/teddy-abbou-1086b691" target="_blank" ><img src="linkedin.svg" class="ico"></a>
+            <a href="https://twitter.com/Teddy_Abbou" target="_blank" ><img src="twitter.svg" class="ico"></a>
+            <a href="https://github.com/TeddyAbbou" target="_blank" ><img src="git.svg" class="ico"></a>
+
+        </div>
+        <div id="pmenuopen" onclick="menuopen()" >
+            <h6>MENU</h6>
+            <img src="menu.svg" id="hamburger">
+        </div>
+        <div id="pmenuclose" onclick="menuclose()">
+            <h6>FERMER</h6>
+            <img src="croix.svg" id="croix">
+        </div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><img src="carre.svg" class="carre"/>Portfolio<img src="carre.svg" class="carre"/></li>
+            <li><a href="contact.php">Contact</a>                                                                                                                                                 </li>
+        </ul>
+    </div>
+
+    <div id="copyg"><p>
+        © Tout droit réservé 2016 by<br>
+        Teddy ABBOU</p>
+    </div>
+</div>
+
+
+<div id="menuclose">
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><img src="carre.svg" class="carre"/>Portfolio<img src="carre.svg" class="carre"/></li>
+        <li><a href="contact.php"> Contact</a></li>
+    </ul>
+</div>
+
+
+<div id="container" >
+
+    <div id="colonne1" onmouseover="airbnb()" onmouseout="airbnbout()" onclick="airbnbopen()">
+
+        <div class="titre">
+            <h2>AIRBNB</h2>
+            <hr width="50%" color="white">
+        </div>
+        <div id="commentaire1">
+        <div class="texte">
+            <h3>Défis : reproduction de la
+                première partie du site.<br><br>
+
+                Temps : 16 heures.<br><br>
+
+                Problèmatique : mettre en place,
+                une vidéo de fond.</h3>
+        </div>
+        <div class="lien">
+            <a href="https://www.airbnb.fr/" target="_blank">
+                <img src="lienp.svg" class="plien">
+            </a>
+                <a href="https://github.com/TeddyAbbou?tab=repositories" target="_blank">
+                <img src="gitp.svg" class="plien">
+            </a>
+        </div>
+            </div>
+        <div id="airbnb"></div>
+        </div>
+    <div id="colonne2" onmouseover="sv()" onmouseout="svout()" onclick="svopen()" >
+
+        <div class="titre">
+            <h2>SVG</h2>
+            <hr width="50%" color="white">
+        </div>
+        <div id="commentaire2">
+        <div class="texte">
+            <h3>Défis : Création d'un site expliquant l'histoire du SVG et rajouter un
+                tutotriel.<br><br>
+
+                Temps : 2 semaines et demi.<br><br>
+
+                Personne ayant comtribué au projet : Teddy Abbou, Charline Laporte,
+                Irina Jacquin, Elodie Anthony, Céline Des Bois & Nikita Gutnichenko</h3>
+        </div>
+        <div class="lien">
+           <a href="http://charlinel.fr/SVG/" target="_blank"><img src="lienp.svg" class="plien"></a>
+            <a href="https://github.com/TeddyAbbou?tab=repositories" target="_blank">
+                <img src="gitp.svg" class="plien">
+            </a>
+        </div>
+            </div>
+        <div id="svg"></div>
+    </div>
+
+    <div id="colonne3" onmouseover="acme()" onmouseout="acmeout()" onclick="acmeopen()" >
+
+        <div class="titre">
+            <h2>ACME</h2>
+            <hr width="50%" color="white">
+        </div>
+        <div id="commentaire3">
+        <div class="texte">
+            <h3>Défis : reproduction de la
+                première partie du site.<br><br>
+
+                Temps : 16 heures.<br><br>
+
+                Problèmatique : mettre de l'animation.</h3>
+        </div>
+        <div class="lien">
+            <a href="http://imm-g-prod.com/acme-world/" target="_blank">
+                <img src="lienp.svg" class="plien"></a>
+            <a href="https://github.com/TeddyAbbou?tab=repositories" target="_blank">
+                <img src="gitp.svg" class="plien">
+        </a>
+
+        </div>
+            </div>
+        <div id="acme"></div>
+    </div>
+
+        <div class="bas">
+            <div id="copyp"><p>
+                © Tout droit réservé 2016 by<br>
+                Teddy ABBOU</p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function  airbnb(){
+                document.getElementById("commentaire1").style.display="flex";
+                document.getElementById("colonne1").style.backgroundColor="#6B9EA2  ";
+                document.getElementById("airbnb").style.opacity="0.1";
+                document.getElementById("colonne1").style.width="60%";
+                document.getElementById("colonne2").style.width="30%";
+                document.getElementById("colonne3").style.width="30%";
+
+            }
+
+
+            function  airbnbout(){
+                document.getElementById("commentaire1").style.display="none";
+                document.getElementById("colonne1").style.backgroundColor="#333333";
+                document.getElementById("airbnb").style.opacity="0.1";
+                document.getElementById("colonne1").style.width="40%";
+                document.getElementById("colonne2").style.width="40%";
+                document.getElementById("colonne3").style.width="40%";
+            }
+
+            function sv (){
+                document.getElementById("commentaire2").style.display="flex";
+                document.getElementById("colonne2").style.backgroundColor="#6B9EA2";
+                document.getElementById("airbnb").style.opacity="0.1";
+                document.getElementById("colonne1").style.width="30%";
+                document.getElementById("colonne2").style.width="60%";
+                document.getElementById("colonne3").style.width="30%";
+            }
+
+            function  svout(){
+                document.getElementById("commentaire2").style.display="none";
+                document.getElementById("colonne2").style.backgroundColor="#333333";
+                document.getElementById("svg").style.opacity="0.1";
+                document.getElementById("colonne1").style.width="40%";
+                document.getElementById("colonne2").style.width="40%";
+                document.getElementById("colonne3").style.width="40%";
+            }
+
+            function acme (){
+                document.getElementById("commentaire3").style.display="flex";
+                document.getElementById("colonne3").style.backgroundColor="#6B9EA2";
+                document.getElementById("airbnb").style.opacity="0.1";
+                document.getElementById("colonne1").style.width="30%";
+                document.getElementById("colonne2").style.width="30%";
+                document.getElementById("colonne3").style.width="60%";
+            }
+
+            function  acmeout(){
+                document.getElementById("commentaire3").style.display="none";
+                document.getElementById("colonne3").style.backgroundColor="#333333";
+                document.getElementById("acme").style.opacity="0.1";
+                document.getElementById("colonne1").style.width="40%";
+                document.getElementById("colonne2").style.width="40%";
+                document.getElementById("colonne3").style.width="40%";
+            }
+
+            function  menuopen(){
+                console.log("airbnb");
+                document.getElementById("pmenuopen").style.display="none";
+                document.getElementById("container").style.display="none";
+                document.getElementById("menuclose").style.display="flex";
+                document.getElementById("pmenuclose").style.display="flex";
+            }
+            function menuclose (){
+                document.getElementById("menuclose").style.display="none";
+                document.getElementById("pmenuopen").style.display="flex";
+                document.getElementById("pmenuclose").style.display="none";
+                document.getElementById("container").style.display="flex";
+            }
+        </script>
+
+    </div>
+</div>
+</body>
+</html>

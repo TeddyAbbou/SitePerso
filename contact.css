@@ -1,0 +1,181 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    height: 75%;
+
+}
+
+#enveloppe{
+    width: 40%;
+    height: 40%;
+    margin: auto 25%;
+}
+
+#plane{
+    width: 40%;
+    height: 40%;
+    margin: auto 25%;
+    display: none;
+}
+
+input{
+    color: white;
+    border: 0;
+    background-color: transparent;
+    font-size: 1.2em;
+    border-bottom: 0.1em solid black;
+
+}
+
+#formulaire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 1vw;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+}
+
+.colonne input{
+    display: flex;
+    /*flex-direction: row;*/
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    /*flex-flow: wrap 2;*/
+    flex-wrap: wrap;
+    height: 29%;
+    width: 85%;
+    justify-content: center;
+}
+
+.colonne{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+}
+
+.colonne input{
+    width: 100%;
+}
+
+textarea{
+    resize:none;
+    margin-left: 2%;
+    width: 45%;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 0.1em solid black;
+    font-size: 1.2em;
+    font-family:'Josefin Sans', Geneva, Arial, sans-serif;
+}
+
+#dl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 2%;
+    width: 100%;
+    font-size: 1vw;
+}
+
+#dl input{
+    color: #b1ffff;
+    margin: 0;
+    width: 10%;
+    border-bottom: none;
+}
+
+.triangle{
+    width: 15%;
+
+}
+
+#texte2 img{
+    margin: 0;
+    padding: 0;
+    width: 5%;
+}
+
+#texte2{
+    /*margin: 2% 0%;*/
+    width: 85%;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+
+    #container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #formulaire {
+        flex-direction: column;
+        height: 150%;
+        width: 150%;
+
+    }
+
+    input{
+        font-size:2.5em ;
+    }
+
+    textarea {
+        font-size: 2.5em;
+        height: 80%;
+        border-bottom: 0.2em solid black;
+    }
+
+    #enveloppe {
+        padding:0%;
+        width: 20%;
+    }
+
+    #dl input {
+        width: 100%;
+    }
+
+    .colonne {
+        display: flex;
+        justify-content: space-around;
+        height: 75%;
+    }
+
+    input {
+        border-bottom: 0.2em solid black;
+
+
+    }
+
+    #formulaire {
+        width: 500%;
+
+    }
+
+    #contact {
+        margin-left: 20%;
+        height: 70%;
+    }
+
+    #contact, #bas {
+        margin: 0%;
+    }
+}
